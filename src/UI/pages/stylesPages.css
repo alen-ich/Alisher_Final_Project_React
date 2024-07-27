@@ -1,0 +1,22 @@
+.main {
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  width: 100%;
+  height: auto;
+}
+
+.profile-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 103px;
+  width: 100%;
+  height: auto;
+}

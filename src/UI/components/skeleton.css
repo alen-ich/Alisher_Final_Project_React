@@ -1,0 +1,145 @@
+.skeleton-post {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  /* animation: fadeIn 0.5s ease-out; */
+}
+
+.skeleton-img-and-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skeleton-img {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #b4b4b4, transparent);
+  animation: slideAnimation 1.5s linear infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.skeleton-animation {
+  animation: fadeAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeAnimation {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skeleton-name-and-tag {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 5px 4px;
+}
+
+.skeleton-name,
+.skeleton-tag,
+.skeleton-quote {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.skeleton-name {
+  height: 15px;
+  width: 100px;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #b4b4b4, transparent);
+  animation: slideAnimation 1.5s linear infinite;
+}
+
+.skeleton-tags {
+  display: flex;
+  gap: 5px;
+}
+
+.skeleton-tag {
+  height: 10px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #b4b4b4, transparent);
+  animation: slideAnimation 1.5s linear infinite;
+}
+
+.skeleton-quote {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #b4b4b4, transparent);
+  animation: slideAnimation 1.5s linear infinite;
+}
