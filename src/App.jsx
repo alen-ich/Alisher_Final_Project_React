@@ -7,8 +7,8 @@ export const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/profile" element={<Profile />} />
         {/* <Route path="/friends" element={<Friends />} /> */}
       </Routes>
     </div>
